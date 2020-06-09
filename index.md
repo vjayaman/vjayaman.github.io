@@ -1,19 +1,22 @@
 
 ## Honours Research Project Proposal
+
 Student: Vasena Jayamanna
+
 Supervisors: Dr. Michael Domaratzki, Dr. Eduardo Taboada
+
 
 ### Introduction
 
-We will be developing a tool for active reporting on SARS-CoV-2 phylogenetic analysis and associated metadata, using the existing EpiQuant analysis framework[[3]](#3). Within this reporting tool we plan to compare clusters of cases across points in time while considering a variety of different factors. My project involves development of a module in which we detect and report on any clusters with a significant increase in size from one time point to the next. While detection of expanding clusters is the focus, I will also use this information as "label data" to attempt prediction of clusters that can be expected to increase in size. In other words, prediction of population prevalence at a secondary time point, using genome data and associated metadata at a primary time point. 
+We will be developing a tool for active reporting on SARS-CoV-2 phylogenetic analysis and associated metadata, using the existing EpiQuant analysis framework [[3]](#3). Within this reporting tool we plan to compare clusters of cases across points in time while considering a variety of different factors. My project involves development of a module in which we detect and report on any clusters with a significant increase in size from one time point to the next. While detection of expanding clusters is the focus, I will also use this information as "label data" to attempt prediction of clusters that can be expected to increase in size. In other words, prediction of population prevalence at a secondary time point, using genome data and associated metadata at a primary time point. 
 
 ### Background preparation
 
-Data available from open source data repositories such as Nextstrain[^2] and GISAID[^1] will be used for analysis. Relevant genomic/phylogenetic data and associated metadata will be collected and processed. We will use the phylogenetic data to extract clusters at significant similarity thresholds. The metadata will be cleaned for use as input into the expanding cluster detection module as well as for the machine learning model in prevalence prediction. Research into appropriate learning algorithms will be done as a starting point of analysis.
+Data available from open source data repositories such as Nextstrain [[2]](#2) and GISAID [[1]](#1) will be used for analysis. Relevant genomic/phylogenetic data and associated metadata will be collected and processed. We will use the phylogenetic data to extract clusters at significant similarity thresholds. The metadata will be cleaned for use as input into the expanding cluster detection module as well as for the machine learning model in prevalence prediction. Research into appropriate learning algorithms will be done as a starting point of analysis.
 
 ### Related work
 
-The EpiQuant model is based on the use of epidemiologic cluster cohesion (ECC), which is a “measure of … homogeneity of isolates within a subtyping cluster”[^4]. Isolates within clusters with high ECC values have epidemiologic profiles with high similarity[^3]. We plan to compute the ECC of clusters generated at various thresholds and under different parameter settings and this analysis will form the core of the reporting tool. I will be responsible for developing a module for monitoring cluster prevalence and cluster expansion which will also include a machine learning component for predicting clusters likely to expand. 
+The EpiQuant model is based on the use of epidemiologic cluster cohesion (ECC), which is a “measure of … homogeneity of isolates within a subtyping cluster” [[4]](#4). Isolates within clusters with high ECC values have epidemiologic profiles with high similarity [[3]](#3). We plan to compute the ECC of clusters generated at various thresholds and under different parameter settings and this analysis will form the core of the reporting tool. I will be responsible for developing a module for monitoring cluster prevalence and cluster expansion which will also include a machine learning component for predicting clusters likely to expand. 
 
 ### Problem statement
 
@@ -42,7 +45,7 @@ The sequence data and metadata are readily available from public repositories, a
 
 ### References
 
-[^1] S. Elbe and G Buckland-Merrett.  ”Data, disease and diplomacy:  GISAID’s innovative contribution toglobal health.”.Global Challenges, 1:33–46, 2017.
-[^2] Hadfield et al. ”Nextstrain: real-time tracking of pathogen evolution.”.Bioinformatics, 34(23):4121–4123,01 December 2018.
+<a id=#1>[1]</a> S. Elbe and G Buckland-Merrett.  ”Data, disease and diplomacy:  GISAID’s innovative contribution toglobal health.”.Global Challenges, 1:33–46, 2017.
+<a id=#2>[2]</a> Hadfield et al. ”Nextstrain: real-time tracking of pathogen evolution.”.Bioinformatics, 34(23):4121–4123,01 December 2018.
 <a id="3">[3]</a> Benjamin M et al Hetman.  ”The EpiQuant Framework for Computing Epidemiological Concordance ofMicrobial Subtyping Data.”.Journal of Clinical Microbiology, 55(5):1334–1349, 2017.
-[^4] Eduardo Taboada.  ”The Campy-COVID project:  applying the EpiQuant framework to facilitate large-scale reporting on SARS-CoV-2 WGS data.”.  PowerPoint presentation, April 2020.
+<a id=#4>[4]</a> Eduardo Taboada.  ”The Campy-COVID project:  applying the EpiQuant framework to facilitate large-scale reporting on SARS-CoV-2 WGS data.”.  PowerPoint presentation, April 2020.
