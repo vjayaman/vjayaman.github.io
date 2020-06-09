@@ -1,38 +1,37 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/vjayaman/vjayaman.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Honours Research Project Proposal
+Student: Vasena Jayamanna
+Supervisors: Dr. Michael Domaratzki, Dr. Eduardo Taboada
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Introduction
+We will be developing a tool for active reporting on SARS-CoV-2 phylogenetic analysis and associated metadata, using the existing EpiQuant analysis framework \citep{EpiQuantPaper}. Within this reporting tool we plan to compare clusters of cases across points in time while considering a variety of different factors. My project involves development of a module in which we detect and report on any clusters with a significant increase in size from one time point to the next. While detection of expanding clusters is the focus, I will also use this information as "label data" to attempt prediction of clusters that can be expected to increase in size. In other words, prediction of population prevalence at a secondary time point, using genome data and associated metadata at a primary time point. 
 
-### Markdown
+### Background preparation
+Data available from open source data repositories such as Nextstrain \citep{Nextstrain} and GISAID \citep{GISAID} will be used for analysis. Relevant genomic/phylogenetic data and associated metadata will be collected and processed. We will use the phylogenetic data to extract clusters at significant similarity thresholds. The metadata will be cleaned for use as input into the expanding cluster detection module as well as for the machine learning model in prevalence prediction. Research into appropriate learning algorithms will be done as a starting point of analysis.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Related work
+The EpiQuant model is based on the use of epidemiologic cluster cohesion (ECC), which is a “measure of … homogeneity of isolates within a subtyping cluster” \citep{CampyCovidPres}. Isolates within clusters with high ECC values have epidemiologic profiles with high similarity \citep{EpiQuantPaper}. We plan to compute the ECC of clusters generated at various thresholds and under different parameter settings and this analysis will form the core of the reporting tool. I will be responsible for developing a module for monitoring cluster prevalence and cluster expansion which will also include a machine learning component for predicting clusters likely to expand. 
 
-```markdown
-Syntax highlighted code block
+### Problem statement
+Rapid reporting on genomic information on COVID-19 suitable for public health officials and front-line epidemiologists is needed. A COVID-19 reporting tool is being developed that will require a module for monitoring cluster prevalence over time and detecting cluster expansion. An additional feature of great interest would be the ability to prospectively predict clusters likely to undergo future expansion. In addition to developing the tools for basic cluster prevalence monitoring, I will develop a machine learning model that can predict SARS-CoV-2 cluster prevalence at a secondary time point, given cluster prevalence, metadata and phylogenetic information at the primary time points.
 
-# Header 1
-## Header 2
-### Header 3
+### Methodology
 
-- Bulleted
-- List
+  - Develop method for comparing the cluster size and cluster composition between time points.
+  - Develop reporting module that outputs cluster sizes, cluster membership, difference in cluster size between time-points
+  - Analyze example data to generate labelled clusters at Time 1 that underwent significant cluster expansion by Time 2. 
+  - Identify fields with enough information to be potential input in a machine learning model, pinpoint preferred format of output (type of classification). 
+  - Select type(s) of model(s) that are appropriate for the problem and set initial parameter values.
+  - Split the data into training and test data sets. Train the data.
+  - Evaluate the results and adjust parameters (or model choice) as required. We will repeat the training and evaluation until results are as satisfactory as possible.
+  - Test the model on the test data and analyze the results, comparing test and training error as a check.
 
-1. Numbered
-2. List
+### Infrastructure required
+The sequence data and metadata are readily available from public repositories, and we have sufficient independent computing resources via personal workstations at the National Microbiology Lab and access to laboratory data servers.
 
-**Bold** and _Italic_ and `Code` text
+### Outcomes
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vjayaman/vjayaman.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  1. A module in the reporting tool for cluster prevalence and cluster expansion detection given independent time points and corresponding data, or
+  2. A learning algorithm that can predict population prevalence for significant clusters at the given time points, or 
+  3. A conclusion on features for which we need more data before the model can perform effectively;  identification of potential influencing factors in cluster expansion over time.
 
