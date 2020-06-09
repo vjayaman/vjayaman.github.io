@@ -45,7 +45,10 @@ The sequence data and metadata are readily available from public repositories, a
 
 ### References
 
-<a id=#1>[1]</a> S. Elbe and G Buckland-Merrett.  ”Data, disease and diplomacy:  GISAID’s innovative contribution toglobal health.”.Global Challenges, 1:33–46, 2017.
-<a id=#2>[2]</a> Hadfield et al. ”Nextstrain: real-time tracking of pathogen evolution.”.Bioinformatics, 34(23):4121–4123,01 December 2018.
+<a id="1">[1]</a> S. Elbe and G Buckland-Merrett.  ”Data, disease and diplomacy:  GISAID’s innovative contribution toglobal health.”.Global Challenges, 1:33–46, 2017.
+
+<a id="2">[2]</a> Hadfield et al. ”Nextstrain: real-time tracking of pathogen evolution.”.Bioinformatics, 34(23):4121–4123,01 December 2018.
+
 <a id="3">[3]</a> Benjamin M et al Hetman.  ”The EpiQuant Framework for Computing Epidemiological Concordance ofMicrobial Subtyping Data.”.Journal of Clinical Microbiology, 55(5):1334–1349, 2017.
-<a id=#4>[4]</a> Eduardo Taboada.  ”The Campy-COVID project:  applying the EpiQuant framework to facilitate large-scale reporting on SARS-CoV-2 WGS data.”.  PowerPoint presentation, April 2020.
+
+<a id="4">[4]</a> Eduardo Taboada.  ”The Campy-COVID project:  applying the EpiQuant framework to facilitate large-scale reporting on SARS-CoV-2 WGS data.”.  PowerPoint presentation, April 2020.
