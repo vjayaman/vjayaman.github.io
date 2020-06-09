@@ -5,7 +5,7 @@ Supervisors: Dr. Michael Domaratzki, Dr. Eduardo Taboada
 
 ### Introduction
 
-We will be developing a tool for active reporting on SARS-CoV-2 phylogenetic analysis and associated metadata, using the existing EpiQuant analysis framework[^3]. Within this reporting tool we plan to compare clusters of cases across points in time while considering a variety of different factors. My project involves development of a module in which we detect and report on any clusters with a significant increase in size from one time point to the next. While detection of expanding clusters is the focus, I will also use this information as "label data" to attempt prediction of clusters that can be expected to increase in size. In other words, prediction of population prevalence at a secondary time point, using genome data and associated metadata at a primary time point. 
+We will be developing a tool for active reporting on SARS-CoV-2 phylogenetic analysis and associated metadata, using the existing EpiQuant analysis framework[[3]](#3). Within this reporting tool we plan to compare clusters of cases across points in time while considering a variety of different factors. My project involves development of a module in which we detect and report on any clusters with a significant increase in size from one time point to the next. While detection of expanding clusters is the focus, I will also use this information as "label data" to attempt prediction of clusters that can be expected to increase in size. In other words, prediction of population prevalence at a secondary time point, using genome data and associated metadata at a primary time point. 
 
 ### Background preparation
 
@@ -40,9 +40,9 @@ The sequence data and metadata are readily available from public repositories, a
   2. A learning algorithm that can predict population prevalence for significant clusters at the given time points, or 
   3. A conclusion on features for which we need more data before the model can perform effectively;  identification of potential influencing factors in cluster expansion over time.
 
-### Citations
+### References
 
 [^1] S. Elbe and G Buckland-Merrett.  ”Data, disease and diplomacy:  GISAID’s innovative contribution toglobal health.”.Global Challenges, 1:33–46, 2017.
 [^2] Hadfield et al. ”Nextstrain: real-time tracking of pathogen evolution.”.Bioinformatics, 34(23):4121–4123,01 December 2018.
-[^3] Benjamin M et al Hetman.  ”The EpiQuant Framework for Computing Epidemiological Concordance ofMicrobial Subtyping Data.”.Journal of Clinical Microbiology, 55(5):1334–1349, 2017.
+<a id="3">[3]</a> Benjamin M et al Hetman.  ”The EpiQuant Framework for Computing Epidemiological Concordance ofMicrobial Subtyping Data.”.Journal of Clinical Microbiology, 55(5):1334–1349, 2017.
 [^4] Eduardo Taboada.  ”The Campy-COVID project:  applying the EpiQuant framework to facilitate large-scale reporting on SARS-CoV-2 WGS data.”.  PowerPoint presentation, April 2020.
